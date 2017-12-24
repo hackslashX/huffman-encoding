@@ -1,0 +1,1 @@
+g++ -I ~/sources/boost/boost_1_66_0/boost main.cpp huffman.cpp huffman_utility.cpp -std=c++11 /usr/local/lib/libboost_serialization.a /usr/local/lib/libboost_filesystem.a /usr/local/lib/libboost_system.a -o huffman
