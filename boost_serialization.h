@@ -1,10 +1,16 @@
-// Boost C++ Libraries (Read License here: http://LINK_TO_LICENSE.com)
+//          Copyright Joe Coder 2004 - 2006.
+// Distributed under the Boost Software License, Version 1.0.
+//    (See accompanying file LICENSE_1_0.txt or copy at
+//          http://www.boost.org/LICENSE_1_0.txt)
+
 #include <boost/archive/binary_oarchive.hpp>
 #include <boost/archive/binary_iarchive.hpp>
 #include <boost/dynamic_bitset.hpp>
 #include <boost/serialization/vector.hpp>
 #include <boost/serialization/serialization.hpp>
 
+// Thanks to sehe at stackoverflow : https://stackoverflow.com/questions/31006792/how-to-serialize-boostdynamic-bitset
+// For the boost::dynamic_bitset serialization
 namespace boost {
 	namespace serialization {
 
@@ -35,6 +41,7 @@ namespace boost {
 
 	}
 }
+// end
 
 struct bitsetR {
 	boost::dynamic_bitset<> x;
